@@ -274,6 +274,22 @@ body {
   color: deeppink;
   font-size: 1em; }
 
+.form-control-feedback.credit {
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+  left: default;
+  color: rgba(128, 128, 128, 0.7);
+  font-size: 0.6em; }
+
+.form-control-feedback.addcredit {
+  position: absolute;
+  bottom: 10%;
+  right: default;
+  left: 18%;
+  color: rgba(128, 128, 128, 0.7);
+  font-size: 0.6em; }
+
 .submit2,
 .submit3,
 .submit4 {

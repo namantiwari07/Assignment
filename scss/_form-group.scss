@@ -106,6 +106,13 @@
     color: $danger;
     font-size: 1em;
 }
+.form-control-feedback.credit {
+    @include feedbacks( 0.6em, 10%, 3%, default);
+}
+.form-control-feedback.addcredit {
+    @include feedbacks(0.6em, 10%, default, 18%);
+   
+}
 
 // hiding the submit buttoms and the basic addons for the other form groups
 .submit2,
