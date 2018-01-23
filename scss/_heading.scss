@@ -2,7 +2,6 @@
 @import 'variables';
 
 
-
 .headingSection {
     padding-bottom: 15px;
 }
@@ -12,8 +11,7 @@
     .h4 {
         @include headingTable(inline-flex, middle);
         @include font(20px, 700);
-        color: rgba(0, 0, 0, 0.7);
-        
+        color: rgba(0, 0, 0, 0.7); 
     }
     .badge-danger {
         @include headingTable(inline-flex, middle, 3%, 13px);
@@ -37,7 +35,7 @@
 
     @include common(30%, 15px);
     @include headingTable(inline-flex, middle);
-    @include border(0.5px solid lightgrey, 2px);
+    @include border(0.5px solid $border-main, 2px);
         
     position: absolute;
     left: 58%;
@@ -49,14 +47,14 @@
     }
 
     .bg-success {
-        background-color: yellowgreen !important;
+        background-color: $progress !important;
     }
     
 }
 
 .proLabel {
     position: absolute;
-    right: 1%; // top: 3em;
+    right: 3%; // top: 3em;
     display: inline-flex;
     text-decoration: none;
     margin-right: auto;

@@ -1,328 +1,58 @@
-html,
-body,
-.h1,
-.h2,
-.h3,
-.h4,
-div,
-section,
-.row,
-p {
-  margin: 0;
-  padding: 0; }
+/*
+Error: File to import not found or unreadable: practice.
+        on line 7 of style.scss
 
-body {
-  margin: 2em 1.5em;
-  background: rgba(211, 211, 211, 0.103);
-  line-height: 1.15; }
+2: @import 'mixins';
+3: @import 'global';
+4: @import 'heading';
+5: @import 'requirements';
+6: @import 'form-group';
+7: @import 'practice';
 
-.row {
-  display: flex; }
-
-.col-6 {
-  display: flex;
-  padding: 0; }
-
-.col-lg-3 {
-  padding-top: 10px; }
-
-.headingSection {
-  padding-bottom: 15px; }
-
-.col-6 .h4 {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 0;
-  font-size: default;
-  font-size: 20px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7); }
-.col-6 .badge-danger {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 3%;
-  font-size: 13px;
-  border: default;
-  border-radius: 50%;
-  font-weight: 200;
-  padding: 5px;
-  color: floralwhite;
-  text-align: center;
-  background-color: rgba(178, 34, 34, 0.8) !important; }
-.col-6 .badge-heading {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 1%;
-  font-size: 14px;
-  color: gray;
-  margin-top: auto;
-  margin-bottom: auto; }
-
-.progress {
-  width: 30%;
-  height: 15px;
-  padding: default;
-  margin: default;
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 0;
-  font-size: default;
-  border: 0.5px solid lightgrey;
-  border-radius: 2px;
-  position: absolute;
-  left: 58%;
-  top: 30%;
-  background-color: white; }
-  .progress .progress-bar {
-    display: list-item; }
-  .progress .bg-success {
-    background-color: yellowgreen !important; }
-
-.proLabel {
-  position: absolute;
-  right: 1%;
-  display: inline-flex;
-  text-decoration: none;
-  margin-right: auto;
-  margin-top: auto;
-  color: green;
-  font-size: 14px;
-  top: 15%; }
-
-.caret {
-  border-top: 0;
-  border-right: solid transparent;
-  border-bottom: solid;
-  border-left: solid transparent; }
-
-.requirementSection {
-  border: 1px solid lightgrey;
-  border-radius: 8px;
-  background-color: rgba(211, 211, 211, 0.3); }
-  .requirementSection .row {
-    padding: 5px 0; }
-
-.requirementForm .requirement, .requirementForm .requirement label, .requirementForm .options label {
-  font-size: 0.8rem;
-  padding-right: 0.5em; }
-
-.requirementForm {
-  padding: 0 15px;
-  display: inline-flex; }
-  .requirementForm .col-4 {
-    border-right: 1px solid rgba(128, 128, 128, 0.2); }
-  .requirementForm .requirement {
-    display: inline-flex;
-    justify-content: space-between;
-    vertical-align: middle;
-    padding-right: 1.5em; }
-    .requirementForm .requirement label {
-      color: gray; }
-    .requirementForm .requirement .requirementDropdown {
-      width: 70%;
-      height: calc(2rem + 2px) !important;
-      border: 1px solid lightgrey;
-      border-radius: default; }
-  .requirementForm .options {
-    display: inline-flex;
-    vertical-align: middle;
-    padding: 0 10px; }
-    .requirementForm .options label {
-      color: gray;
-      margin: 0px 5px; }
-    .requirementForm .options .custom-control {
-      display: inline-flex; }
-    .requirementForm .options .custom-control-label::before {
-      border: 0.5px solid lightgrey;
-      border-radius: default;
-      background: white;
-      width: 18px;
-      height: 18px;
-      padding: default;
-      margin: default; }
-    .requirementForm .options .custom-control-label::after {
-      width: 18px;
-      height: 18px;
-      padding: default;
-      margin: default; }
-    .requirementForm .options .custom-control-input {
-      margin: 0 0.5em; }
-    .requirementForm .options input[type="checkbox"] {
-      display: inline-flex;
-      width: 18px;
-      height: 18px;
-      padding: default;
-      margin: default; }
-
-.formFieldSection {
-  padding: 20px 0; }
-  .formFieldSection .row .column3 {
-    padding: 0 5px; }
-
-.form-group {
-  margin: 0px; }
-  .form-group label.label {
-    padding: 8px;
-    display: block;
-    margin-bottom: 0;
-    font-size: 1em;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.733); }
-  .form-group .planned {
-    font-size: 0.8em;
-    font-weight: 400;
-    color: grey;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5; }
-
-.form-input-group1,
-.form-input-group2,
-.form-input-group3,
-.form-input-group4 {
-  padding: 10px 10px; }
-
-.input-group {
-  margin-bottom: 5px !important; }
-
-.formField1 .form {
-  border: 2px solid lightgrey;
-  border-radius: 10px; }
-.formField1 .groupLabel1 {
-  background-color: rgba(211, 211, 211, 0.3); }
-.formField1 .form-input-group1 {
-  background-color: white; }
-.formField1 .validate {
-  border-left-width: 5px;
-  border-left-color: yellowgreen; }
-.formField1 .submit1 {
-  padding: 1em;
-  text-align: center;
-  background-color: #27AFDF;
-  border-radius: 0 0 10px 10px;
-  display: block; }
-  .formField1 .submit1 button {
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #027CAF;
-    padding: 8px 15px;
-    color: rgba(245, 245, 245, 0.9);
-    border-radius: 5px;
-    border: 3px double darkslateblue; }
-
-.input-group-text {
-  display: inline-flex;
-  -webkit-box-align: center;
-  text-align: center;
-  white-space: nowrap;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 1.5;
-  background-color: #27AFDF;
-  padding: 0.2rem 0.5rem; }
-
-.form-control.control1.validate::placeholder {
-  color: black;
-  font-size: 12px;
-  font-weight: 500; }
-
-.form-control.control1::placeholder {
-  color: blue;
-  font-size: 12px;
-  font-weight: 500; }
-
-.form-control {
-  text-decoration: none;
-  border: 1px dashed lightgrey;
-  font-size: 12px;
-  width: 100%;
-  height: 50px;
-  border-radius: 4px !important; }
-  .form-control::placeholder {
-    color: lightgray; }
-
-.control1 {
-  display: inline-flex;
-  margin-bottom: 8px;
-  text-decoration: none;
-  border: 1px dashed lightgrey;
-  font-size: 12px;
-  width: 100%;
-  height: 50px;
-  border-radius: 4px !important;
-  border: 1px solid lightgrey; }
-  .control1::placeholder {
-    color: lightgray; }
-
-.popover-body {
-  background-color: white;
-  width: 250px;
-  color: black;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  border-left-width: 5px;
-  border-left-color: deeppink;
-  font-size: 1em; }
-
-.arrow {
-  left: 90% !important; }
-
-.fa-exclamation-circle {
-  position: absolute;
-  top: 35%;
-  right: 5%;
-  color: deeppink;
-  font-size: 1em; }
-
-.submit2,
-.submit3,
-.submit4 {
-  padding: 1em;
-  text-align: center;
-  background-color: #27AFDF;
-  border-radius: 0 0 10px 10px;
-  display: block;
-  display: none; }
-  .submit2 button,
-  .submit3 button,
-  .submit4 button {
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #027CAF;
-    padding: 8px 15px;
-    color: rgba(245, 245, 245, 0.9);
-    border-radius: 5px;
-    border: 3px double darkslateblue; }
-
-.basic-addons2,
-.basic-addons3,
-.basic-addons4 {
-  display: none; }
-
-/* enable absolute positioning */
-.inner-addon {
-  position: relative; }
-
-/* style icon */
-.inner-addon .glyphicon {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none; }
-
-/* align icon */
-.left-addon .glyphicon {
-  left: 0px; }
-
-.right-addon .glyphicon {
-  right: 0px;
-  top: 10%; }
-
-/* add padding  */
-.left-addon input {
-  padding-left: 30px; }
-
-.right-addon input {
-  padding-right: 30px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:7
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: practice.\A         on line 7 of style.scss\A \A 2: @import 'mixins';\A 3: @import 'global';\A 4: @import 'heading';\A 5: @import 'requirements';\A 6: @import 'form-group';\A 7: @import 'practice';"; }

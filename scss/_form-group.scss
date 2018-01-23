@@ -1,5 +1,5 @@
 
-// @mixin common($width, $height, $padding:default, $margin:default, $fontsize:default, $fontWeight:default )
+@import 'variables';
 
 
 .formFieldSection {
@@ -36,33 +36,22 @@
 
 .input-group { // margin bottom global
     margin-bottom: 5px !important;
+
 }
 
 .formField1 {
+    .form { @include border(2px solid $border-main, 10px); }
 
-    .form {
-        border: 2px solid lightgrey;
-        border-radius: 10px;
-    }
+    .groupLabel1 { background-color: rgba(211, 211, 211, 0.3); }
 
-    .groupLabel1 {
-        background-color: rgba(211, 211, 211, 0.3);
-    }
-
-    .form-input-group1 {
-        background-color: white;
-    }
+    .form-input-group1 { background-color: white; }
 
     .validate {
         border-left-width: 5px;
-        border-left-color: yellowgreen;
+        border-left-color: $progress;
     }
-
     //button
-    .submit1 {
-        @include submit();
-    }
-
+    .submit1 { @include submit();}
 }
 
 .input-group-text {
@@ -79,59 +68,52 @@
 }
 
 
-.form-control.control1.validate::placeholder {
-    @include placeholder(black);
-}
+// manual placing of the placeholders
+.form-control.control1.validate::placeholder { @include placeholder(black);}
 
-.form-control.control1::placeholder{
-    @include placeholder(blue);
-}
+.form-control.control1::placeholder{ @include placeholder(blue); }
 
-
-.form-control {
-    @include formControl();
-  
-}
+.form-control { @include formControl(); }
 
 .control1 {
     display: inline-flex;
     margin-bottom: 8px;
     @include formControl();
-    border: 1px solid lightgrey;
+    @include border(1px solid lightgrey); 
 }
 
+
+// popover 
 .popover-body {
+    @include border(1px solid $border-main, 5px);
     background-color: white;
-    width: 250px;
+    width: auto;
     color: black;
-    border: 1px solid lightgrey;
-    border-radius: 5px;
     border-left-width: 5px;
-    border-left-color: deeppink;
+    border-left-color: $danger;
     font-size: 1em;
 }
-
+//popover arrow
 .arrow {
     left: 90% !important;
 }
 
-
+//font awsome icon properties
 .fa-exclamation-circle {
     position: absolute;
     top: 35%;
     right: 5%;
-    color: deeppink;
+    color: $danger;
     font-size: 1em;
 }
 
-
+// hiding the submit buttoms and the basic addons for the other form groups
 .submit2,
 .submit3,
 .submit4 {
     @include submit();
     display: none;
 }
-
 .basic-addons2,
 .basic-addons3,
 .basic-addons4 {

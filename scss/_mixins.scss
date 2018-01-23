@@ -77,10 +77,10 @@
     }
 }
 
+
 //placeholder mixin
 
 @mixin placeholder($color){
     color: $color;
     font-size: 12px;
-    font-weight: 500;
 }
