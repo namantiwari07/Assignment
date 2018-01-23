@@ -1,0 +1,86 @@
+
+
+@mixin common($width, $height, $padding:default, $margin:default ) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+
+}
+
+//font basic mixin
+@mixin font($fontsize:default, $fontWeight:default) {
+    font-size:$fontsize;
+    font-weight: $fontWeight;
+}
+
+//border basic mixin
+@mixin border($border:default, $radius:default) {
+    border: $border;
+    border-radius: $radius;
+}
+
+@mixin headingTable($display: inline-table, $align: middle, $marginL: 0, $fontSize: default) {
+    display: $display;
+    vertical-align: $align;
+    margin-left: $marginL;
+    font-size: $fontSize;
+}
+
+// form group label mixin
+
+@mixin groupLabel(){
+    padding: 8px;
+    display: block;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+// form control mixin
+
+@mixin formControl(){
+    text-decoration: none;
+    border: 1px dashed lightgrey;
+    font-size:12px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px !important;
+
+    &::placeholder {
+        color: rgba(211, 211, 211, 1);
+    }
+}
+
+
+// form validity mixin
+@mixin borderLeft() {
+    border-left-color: yellowgreen;
+    border-left-width: 5px;
+}
+
+// submit button mixin 
+@mixin submit(){
+    padding: 1em;
+    text-align: center;
+    background-color:#27AFDF;
+    border-radius: 0 0 10px 10px;
+    display:block;
+    & button {
+        @include font(15px, 600);
+        background-color: #027CAF;
+        padding: 8px 15px;
+        color: rgba(245, 245, 245, 0.9);
+        border-radius: 5px;
+        border: 3px double darkslateblue;
+    }
+}
+
+//placeholder mixin
+
+@mixin placeholder($color){
+    color: $color;
+    font-size: 12px;
+    font-weight: 500;
+}

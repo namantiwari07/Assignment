@@ -1,0 +1,83 @@
+
+.caret {
+     border-top: 0;
+     border-right: solid transparent;
+     border-bottom:solid;
+     border-left: solid transparent;
+}
+
+.requirementSection {
+   
+    @include border(1px solid lightgrey, 8px);
+    background-color: rgba(211, 211, 211, 0.3);
+    
+    .row {
+        padding: 5px 0;
+    }
+}
+
+%requirement {
+    font-size: 0.8rem;
+    padding-right: 0.5em;
+}
+.requirementForm {
+    padding: 0 15px;
+    display: inline-flex;
+    .col-4 {
+        border-right: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .requirement {
+        display: inline-flex;
+        justify-content: space-between;
+        @extend %requirement;
+        vertical-align: middle;
+        padding-right: 1.5em;
+        
+        & label {
+            @extend %requirement;
+            color: gray;
+        }
+
+        & .requirementDropdown {
+            width: 70%;
+            height: calc(2rem + 2px) !important;
+            @include border(1px solid lightgrey);
+        }
+    }
+
+    .options {
+        display: inline-flex;
+        vertical-align: middle;
+        padding: 0 10px;
+
+        & label { 
+            @extend %requirement;
+            color: gray;
+            margin: 0px 5px;
+        
+        }
+
+        .custom-control {
+            display: inline-flex;
+        }
+
+        .custom-control-label::before{
+            @include border(0.5px solid lightgrey);
+            background: white;
+            @include common(18px,18px); 
+        }
+        .custom-control-label::after{
+           @include common(18px, 18px);
+        }
+        .custom-control-input {
+            margin: 0 0.5em;
+        }
+
+        input[type="checkbox"]{
+            display: inline-flex;
+            @include common(18px, 18px);
+            
+        }
+    }
+}

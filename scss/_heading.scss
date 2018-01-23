@@ -1,0 +1,72 @@
+
+@import 'variables';
+
+
+
+.headingSection {
+    padding-bottom: 15px;
+}
+
+.col-6 {
+
+    .h4 {
+        @include headingTable(inline-flex, middle);
+        @include font(20px, 700);
+        color: rgba(0, 0, 0, 0.7);
+        
+    }
+    .badge-danger {
+        @include headingTable(inline-flex, middle, 3%, 13px);
+        @include border(default,50%);
+        font-weight: 200;
+        padding: 5px;
+        color: floralwhite;
+        text-align: center;
+        background-color: $badge-color !important;
+    }
+    .badge-heading {
+         @include headingTable(inline-flex, middle, 1%, 14px);
+         color: gray;
+         margin-top: auto;
+         margin-bottom: auto;
+    }
+}
+
+
+.progress {
+
+    @include common(30%, 15px);
+    @include headingTable(inline-flex, middle);
+    @include border(0.5px solid lightgrey, 2px);
+        
+    position: absolute;
+    left: 58%;
+    top: 30%;
+    background-color: white;
+
+    .progress-bar {
+        display: list-item;
+    }
+
+    .bg-success {
+        background-color: yellowgreen !important;
+    }
+    
+}
+
+.proLabel {
+    position: absolute;
+    right: 1%; // top: 3em;
+    display: inline-flex;
+    text-decoration: none;
+    margin-right: auto;
+    margin-top: auto;
+    color: green;
+    font-size: 14px;
+    top: 15%;   
+}
+
+
+
+
+

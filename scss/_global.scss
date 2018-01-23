@@ -1,0 +1,40 @@
+
+html,
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+div,
+section,
+.row,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 2em 1.5em;
+    background: rgba(211, 211, 211, 0.103);
+    line-height: 1.15;
+}
+
+.row {
+    // padding: 0.5em 0;
+    display: flex;
+}
+
+.col-6 {
+    display: flex;
+    padding: 0;
+}
+
+.col-lg-3 {
+    padding-top: 10px;
+}
+
+// Temperoary style
+
+// .row {
+//     border: 1px solid lightgrey;
+// }
