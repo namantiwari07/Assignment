@@ -101,20 +101,17 @@
 //font awsome icon properties
 .fa-exclamation-circle {
     position: absolute;
-    top: 35%;
+    top: 20%;
     right: 5%;
     color: $danger;
     font-size: 1em;
 }
 .form-control-feedback.credit {
-    @include feedbacks( 0.6em, 10%, 3%, default);
+    @include feedbacks( 0.6em, 10%, 5%, default);
 }
 .form-control-feedback.addcredit {
     @include feedbacks(0.6em, 10%, default, 15.5%);
-<<<<<<< HEAD
    
-=======
->>>>>>> 82e20f61b596515b27e71c1e602396b6a4338202
 }
 
 // hiding the submit buttoms and the basic addons for the other form groups
