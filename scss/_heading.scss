@@ -38,7 +38,7 @@
     @include border(0.5px solid $border-main, 2px);
         
     position: absolute;
-    left: 58%;
+    left: 60%;
     top: 30%;
     background-color: white;
 
@@ -54,7 +54,7 @@
 
 .proLabel {
     position: absolute;
-    right: 3%; // top: 3em;
+    right: 1%; 
     display: inline-flex;
     text-decoration: none;
     margin-right: auto;

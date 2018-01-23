@@ -47,7 +47,7 @@
     .form-input-group1 { background-color: white; }
 
     .validate {
-        border-left-width: 5px;
+        border-left-width: 8px;
         border-left-color: $progress;
     }
     //button
@@ -63,7 +63,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
-    background-color: #27AFDF;
+    background-color:$submit-form;
     padding: 0.2rem 0.5rem;
 }
 
@@ -71,15 +71,17 @@
 // manual placing of the placeholders
 .form-control.control1.validate::placeholder { @include placeholder(black);}
 
-.form-control.control1::placeholder{ @include placeholder(blue); }
+.form-control.control1::placeholder{ @include placeholder($submit-form); }
 
-.form-control { @include formControl(); }
+.form-control { @include formControl(12px); }
 
 .control1 {
     display: inline-flex;
     margin-bottom: 8px;
-    @include formControl();
-    @include border(1px solid lightgrey); 
+    @include formControl(15px);
+    @include border(1px solid lightgrey);
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
 
