@@ -1,10 +1,8 @@
 
 @import 'variables';
 
-
 .formFieldSection {
     padding: 20px 0;
-
     .row {
         .column3{
             padding: 0 5px ;
@@ -33,10 +31,8 @@
 .form-input-group4 {
     padding: 10px 10px;
 }
-
 .input-group { // margin bottom global
     margin-bottom: 5px !important;
-
 }
 
 .formField1 {
@@ -67,7 +63,6 @@
     padding: 0.2rem 0.5rem;
 }
 
-
 // manual placing of the placeholders
 .form-control.control1.validate::placeholder { @include placeholder(black);}
 
@@ -81,7 +76,6 @@
     @include formControl();
     @include border(1px solid lightgrey); 
 }
-
 
 // popover 
 .popover-body {
@@ -110,8 +104,7 @@
     @include feedbacks( 0.6em, 10%, 3%, default);
 }
 .form-control-feedback.addcredit {
-    @include feedbacks(0.6em, 10%, default, 18%);
-   
+    @include feedbacks(0.6em, 10%, default, 15.5%);  
 }
 
 // hiding the submit buttoms and the basic addons for the other form groups
@@ -126,20 +119,3 @@
 .basic-addons4 {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
