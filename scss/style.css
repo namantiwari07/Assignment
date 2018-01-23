@@ -269,7 +269,7 @@ body {
 
 .fa-exclamation-circle {
   position: absolute;
-  top: 35%;
+  top: 20%;
   right: 5%;
   color: deeppink;
   font-size: 1em; }
@@ -277,7 +277,7 @@ body {
 .form-control-feedback.credit {
   position: absolute;
   bottom: 10%;
-  right: 3%;
+  right: 5%;
   left: default;
   color: rgba(128, 128, 128, 0.7);
   font-size: 0.6em; }
@@ -286,7 +286,7 @@ body {
   position: absolute;
   bottom: 10%;
   right: default;
-  left: 18%;
+  left: 15.5%;
   color: rgba(128, 128, 128, 0.7);
   font-size: 0.6em; }
 
